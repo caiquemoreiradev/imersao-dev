@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="shortcut icon" href="./images/coin_favicon.png" type="image/x-icon">
+    <title>ImersãoDev | Aula 01</title>
+</head>
+
+<body>
+    <header>
+        <h2>alura | <span>imersão</span> <strong>dev_</strong></h2>
+        <div class="my-info">
+            <h4>Github: caiquemoreiradev | Linkedin: caiquemoreiradev01</h4>
+            <img src="./images/profile.jpg" alt="Profile">
+        </div>
+    </header>
+
+    <div class="main__content">
+        <div class="logo">
+            <h1>Conversor de moedas</h1>
+            <img src="./images/money.png" alt="">
+        </div>
+
+        <h3>Converta os valores em Dólar, Euro, Iene, etc... para Real</h3>
+
+
+        <section id='converter'>
+            <div class="converter__container">
+
+                <span>Selecione a moeda: </span>
+                <select onchange="DOM.updateText()" name="selectCoin" id="coins">
+                    <option value="0">Selecione</option>
+                    <option value="dólar">Dólar</option>
+                    <option value="euro">Euro</option>
+                    <option value="iene">Iene</option>
+                </select>
+
+                <span id="coin_to_convert">Valor em -- </span>
+                <input id="realValue" type="text">
+                <button onclick="DOM.convertValues()">Calcular</button>
+
+                <span>Valor em Real: </span>
+                <div class="value__result">
+                    <span>R$ 0, 00</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

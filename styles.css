@@ -1,0 +1,164 @@
+/* Geral ============ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #70C0F9, #1D7FC4, #25A0F7);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* Header ============ */
+
+header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2 span {
+    font-weight: normal;
+}
+
+header h2 strong {
+    background: #F0C41A;
+    padding: 3px;
+}
+
+header .my-info {
+    display: flex;
+    align-items: center;
+}
+
+body header .my-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+/* Main Content ============ */
+
+body .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .logo img {
+    width: 80px;
+    margin-left: -3rem;
+}
+
+body .logo h1 {
+    padding: 0.5rem 4rem 0;
+    text-align: center;
+}
+
+body h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+div.main__content {
+    padding: 5rem 4rem 0;
+}
+
+/* Conversor Container ============ */
+
+#converter {
+    display: flex;
+    justify-content: center;
+}
+
+div.converter__container {
+    height: 200px;
+    width: 80%;
+
+    margin: 4rem;
+    border-radius: 1rem;
+
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+
+    color: #000;
+
+    justify-content: center;
+}
+
+div.converter__container span {
+    margin: 2rem 0.5rem 2rem 2rem;
+}
+
+div.converter__container button {
+    border: none;
+    background: #25A0F7;
+    border: 1px solid #25A0F7;
+    color: #fff;
+
+    padding: 8px;
+    border-radius: 5px;
+}
+
+div.converter__container button:hover {
+    cursor: pointer;
+
+    background: #fff;
+    color: #25A0F7;
+    border: 1px solid #25A0F7;
+
+    border-radius: 5px;
+}
+
+div.converter__container input {
+    border: none;
+    padding: 0.5rem;
+
+    background: #f0f2f5;
+}
+
+div.converter__container select {
+    padding: 0.3rem;
+    border: none;
+
+    background: #f0f2f5;
+}
+
+div.converter__container select:hover {
+    cursor: pointer;
+    opacity: 0.6;
+} 
+
+div.converter__container .value__result {
+    width: 185px;
+    padding: 0.3rem;
+    background: #f0f2f5;
+    text-align: right;
+}
+
+@media(max-width: 850px) {
+
+    div.converter__container {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    div.converter__container button {
+        width: 185px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header .my-info {
+        display: none;
+    }
+}
+
